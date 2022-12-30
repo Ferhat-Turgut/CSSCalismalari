@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-size: 16px; /*Html nin font-size ını değiştirirsek,
+             buna bağlı olan diğer rem ve dolaylı olarak em değerleri otomatik olarka değişecektir.*/
+        }
+        /*Serif-Sanserif-Monospace olarak genelde 3 tip font var.
+        Serif-Sanserif farkı ise Serif'in harflerinin uçları tırnak gibi ve kavisli.
+        SanSerif ise düz olarak yazar.Not:Bunlar generic family dir.*/
+        h1{
+            font-family:Arial, Helvetica, sans-serif;
+            /*Sıralı olarak verilen family ler denenir.
+            Cihazda arial ve helvetica yoksa default olan sans-serif fontu kullanılır.*/
+        }
+        h2{
+            font-family: 'Open Sans', sans-serif;
+        }
+        p#p1{
+            background: yellow;
+            font-size: 16px;
+            line-height: 32px;
+            line-height: 2em; /*(em) ile içinde bulunduğu yapıdaki size'ın 2 katını otomatik alabiliriz.*/
+        }
+        p#p2{
+            background: green;
+            font-size: 16px;
+            line-height: 2em; /*(em) ile içinde bulunduğu yapıdaki size'ın 2 katını otomatik alabiliriz.*/
+        }
+        p#p3{
+            font-size: 1.5rem; /*ilgili paragrafın font-size'ı,
+             bu dosyanın root element'inin (html) size ının 1.5 katı olarak otomatik ayarlanabilir.*/
+             line-height: 2.5em;
+             background: blue;
+        }
+
+        div{
+            font-size: 30px;
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        div span{
+            font-size: 50%; /*span'in içinde bulunduğu div'in font size'ının %50 olur.(em) gibi*/
+            font-style: italic; /*İtalik*/
+            font-weight: bold; /*Kalın*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Başlık 1</h1>
+    <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, odit fugiat quidem corporis laborum architecto beatae pariatur, tempore totam officiis rerum. Repellat fugiat modi praesentium minus temporibus recusandae neque velit voluptates ab nisi delectus error natus libero placeat obcaecati soluta qui enim, dolor tempore odit facilis laboriosam odio. Quam, eaque?</p>
+    <h2>Başlık 2</h2>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque modi eum harum vel perferendis voluptatibus, officiis consectetur, dolorem reiciendis incidunt veritatis, cumque dolorum praesentium? Ad impedit quas, pariatur accusantium eligendi doloremque voluptatum. Libero numquam, et optio fuga at, pariatur eius exercitationem similique cupiditate soluta praesentium explicabo quia aperiam dignissimos corporis.</p>
+    <h3>Başlık 3</h3>
+    <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque modi eum harum vel perferendis voluptatibus, officiis consectetur, dolorem reiciendis incidunt veritatis, cumque dolorum praesentium? Ad impedit quas, pariatur accusantium eligendi doloremque voluptatum. Libero numquam, et optio fuga at, pariatur eius exercitationem similique cupiditate soluta praesentium explicabo quia aperiam dignissimos corporis.</p>
+
+    <div>
+        <p>Lorem, ipsum dolor sit amet <span>consectetur</span>  adipisicing elit. Cum, labore?</p>
+    </div>
+</body>
+</html>

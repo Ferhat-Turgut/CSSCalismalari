@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Flexbox</title>
+    <style>
+        *{
+            margin: 0px 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 200px;
+            text-align: center;
+            background-color: #f2f2f2;
+            border: 1px solid black;
+            height: 200px;
+            margin: 10px;
+
+        }
+        .container{
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column; /*tek sütun olarak sıralar.*/
+            flex-direction: row; /*tek satır olarak sıralar*/
+            justify-content: center; /*content flexin neresinden başlasın*/
+            justify-content: space-between; /*contenti flexin aralarına boşluklu yerleştirir.*/
+            justify-content: flex-start; /*flex in başladığı yerden contenti başlatır.*/
+
+            align-items: center; /*Hight özelliğini center olarak ayarlar 
+            ve default olan strech özelliği kaldırıldığı için content dışındaki yerler flex olur.*/
+            align-items: flex-start; /*flex startından itibaren content koyar.*/
+
+            flex-wrap: wrap; /*flex-wrap in default özelliği no-wraptir.
+            Bu yüzden contenti flex e sığdırmak için width ini küçültür.Wrap content flexi geçiyorsa alt satıra ekler.*/
+            height: 600px;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Article1</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="box">
+            <h1>Article2</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="box">
+            <h1>Article3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="box">
+            <h1>Article1</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="box">
+            <h1>Article2</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="box">
+            <h1>Article3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        
+    </div>
+</body>
+</html>

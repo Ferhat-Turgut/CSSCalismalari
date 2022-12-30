@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-margins</title>
+    <style>
+        *{
+            /*Universal selector kullanılarak margin ve padding sıfırlanır.*/
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            margin-top: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+        .box2{
+            /*top-right-bottom-lef--->tek satırda yazmak için margin sırası*/
+            margin: 40px 40px 40px 40px;
+        }
+        .box3{
+            background: #a7a7a7;
+            max-width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            /*margin i sağ ve soldan ortalar.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, suscipit!</p>
+    </div>
+    <div class="box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, suscipit!</p>
+    </div>
+    <div class="box3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, suscipit!</p>
+    </div>
+</body>
+</html>

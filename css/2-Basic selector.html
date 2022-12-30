@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+    <style>
+        
+        /*(h1 ve p ) etiketlerini seçer*/
+        h1,p{
+            color: brown;
+            background: yellowgreen;
+        }
+        /*(#) id seçerken kullanılır*/
+        #logo{
+            color: blueviolet;
+            background: black;
+        }
+        /*(.) class seçerken kullanılır*/
+        .info{
+            color: coral;
+            background: pink;
+        }
+        /*(#) id ve (.) class ları beraber seçer. Araya virgül koyulur.*/
+        #logo, .lead{
+            color: darkblue;
+            background: pink;
+        }
+        /*(2 şartı da sağlayan etiketleri seçer.Araya virgül konmaz)*/
+        #parag1.lead{
+            color: green;
+            background: firebrick;
+            font-style: italic;
+        }/*a link etiketlerini seçer.*/
+
+        a{
+            text-decoration-line: none;
+        }
+        /*(ul) içindeki (li) içindeki (a) etiketini seçer*/
+       ul li a{
+        color: darkcyan;
+        font-style: italic;
+        text-decoration: underline;
+
+       }
+       /*(.) info classı içindeki span etiketlerini seçer*/
+       .info span {
+        color: brown;
+       }
+       /*(.) info classı içindeki (.) primary class ını seçer*/
+       .info .primary{
+        font-style: italic;
+       }
+       *{
+        font-size: 15px;
+       }
+       /* (*) işareti tüm etiketleri seçer.*/
+    </style>
+    <!--id selektor için(#),class selektor için (.),çoklu seçim için araya(,), iki koşul aynı anda seçilecek ise araya (,) koymadan yazılır.-->
+    <!--(parent-child) içindeki etiketlere ulaşmak için boşluklu şekilde style etiketleri yazılır.-->
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1 id="logo">Logo</h1>
+
+        <ul>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </header>
+    <h1>Header 2</h1>
+    <p id="parag1" class="lead info">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolor ipsa quis expedita ab asperiores minus doloremque ea totam exercitationem.
+    </p>
+    <p class="info">Lorem ipsum <span class="primary">dolor</span>  sit amet consectetur adipisicing elit. Dignissimos minima laborum dolorem deserunt quos officiis, consequatur deleniti ipsum veniam itaque.</p>
+    <p class="info">Lorem ipsum <span>dolor</span>  sit amet  consectetur, adipisicing elit. Possimus vero laudantium labore mollitia et cum quasi. Aperiam placeat aliquam aliquid!</p>
+    <p>Test paragraph</p>
+    
+    <a href="#">Home</a>
+</body>
+</html>

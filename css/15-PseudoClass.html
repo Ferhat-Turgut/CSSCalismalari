@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class(state)</title>
+    <style>
+        a{
+            font-size: 24px;
+        }
+        a:hover{ /*etiket:durum yapılarak istenen olay sağlanır.*/
+            background: red;
+        }
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: black;
+        }
+        a:active{
+            color: green;
+        }
+        input{
+            font-size: 1.5em;
+            border-radius: 4px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        input:focus{
+            outline: 0;
+            border: 2px solid red;
+        }
+        a#face{
+            font-size: 24px;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        a#face:hover{
+            background-color: white;
+            color: blue;
+            border: 2px solid blue;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">This is a link</a>
+
+    <input type="text" placeholder="Name">
+    <br><br><br>
+
+    <a href="#" id="face">Facebook</a>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Position</title>
+    <style>
+        .fixed-topbar{
+            color: white;
+            background-color: black;
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            left: 25%;
+            top: 20px;
+        }
+
+        .red1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+        .blue1{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative; /*elementin bulunduğu konum referans alınarak sonraki işlemler yapılır.*/ 
+            left: 5px;
+            top: 5px;
+            /*blue red i eziyor. eğer red önde olsun istersek z index vermeliyiz.*/
+        }
+
+        .red2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            left: 20px;
+            top: 20px;
+            z-index: 1; /*red indeksi yüksek oldukça yaklaşır.
+             o yüzden yükseltiriz.Diğer yol blue elementin z index ini düşürmek*/
+        }
+        .blue2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative; /*elementin bulunduğu konum referans alınarak sonraki işlemler yapılır.*/ 
+            left: 5px;
+            top: 5px;
+            z-index: -1; /*red in z-indexini arttırmak ile aynı işleve sahip.*/
+        }
+
+        .outer-box{
+            width: 200px;
+            height: 200px;
+            background-color: #a7a7a7;
+            position: relative; /* kapsayıcı static'te kalmamalı.Ya fixed ya da relative olmalı.*/
+
+            left: 200px;
+            top: 100px;
+        }
+        .inner-box{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute; /*Bu classın içinde bulunduğu kapsayıcı div'ine göre poziyonlanması için kullanılır.
+            Fakat kapsayıcısının position özelliği static'te olmamalı.Yoksa body'yi referans alır.*/
+            right: 10px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body style="height: 1000px;">
+    <div class="fixed-topbar">Udemy</div>
+    <br><br><br><br><br><hr>
+    <div class="red1"></div>
+    <div class="blue1"></div>
+    <br><br><br><br><br><hr>
+    <div class="red2"></div>
+    <div class="blue2"></div>
+    <hr><br><br>
+    <div class="outer-box">
+        <div class="inner-box"></div>
+    </div>
+</body>
+</html>

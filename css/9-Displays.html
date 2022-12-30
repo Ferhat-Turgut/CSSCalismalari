@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Display</title>
+    <style>
+        .box{
+            width: 50%;
+            height: 20px;
+        }
+        .box1{
+            background: red;
+        }
+        .box2{
+            background: blue;
+        }
+        #test-link{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            /*Inline olan contentleri kısmi blok level olarak kullanmak için display i inline-block seçeriz.
+            sonraki contenti devamına yazar.*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <a href="#" id="test-link">Test Link</a></body>
+    Test Content
+</html>

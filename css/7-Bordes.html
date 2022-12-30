@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes & Radius</title>
+    <style>
+        #box1{
+            background: #a7a7a7;
+            border: 5px red solid; /*-->Bu şekilde tek satırda özellikler verilebilir.(sıralı)*/
+
+            /* -->Bu şekilde ayrı ayrı özellikler verilebilir.
+            border-width: 5px;
+            border-color: red;
+            border-style: solid;*/
+        }
+        #box2{
+            background: #a7a7a7;
+            border-left-color: red;
+            border-left-width: 10px;
+            border-left-style: solid;
+            border-radius: 10px;
+        }
+        #box3{
+            background: #a7a7a7;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            /*border-radius  height a eşit olursa düzgün bir daire elde edebiliriz.*/
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <h1>BOX 1</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, similique.</p>
+    </div>
+    <div id="box2">
+        <h1>BOX 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, quo.</p>
+    </div>
+    <div id="box3">
+        
+    </div>
+</body>
+</html>

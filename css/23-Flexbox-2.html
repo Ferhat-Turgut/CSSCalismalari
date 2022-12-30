@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Flexbox-2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: bor;
+        }
+        .container{
+            width: 75%;
+            min-height: 600px;
+            background-color: black;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; /*boşluklu gösterir. Başa-ortaya-sona şeklinde.*/
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: white;
+            border: 1px solid black;
+            text-align: center;  
+            margin: 10px;          
+        }
+        .box1{
+            order: 2; /*ekrandaki sırayı değiştirir numaraya göre.*/
+            background-color: red;
+            align-self: flex-end;
+            flex-grow: 1; /*1/6 sı kadar yer kaplar*/
+        }
+        .box2{
+            order: 1;
+            background-color: blue;
+            align-self: center; /*kendini hizalar.*/
+            flex-grow: 2;/*2/6 sı kadar yer kaplar*/
+        }
+        .box3{
+            order: 3;
+            background-color: green;
+            flex-grow: 3;/*3/6 sı kadar yer kaplar*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+
+    </div>
+</body>
+</html>

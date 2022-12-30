@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Pseudo Elements</title>
+    <style>
+        .para1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+            background-color: chocolate;
+        }
+        .para1::first-line{
+            color: yellow;
+        }
+        .para1::first-letter{
+            color: blue;
+            font-size: 40px;
+        }
+        .para1::after{
+           
+            color:green;
+            content: url("./images/tel.png");
+            content:  "PARAGRAF SONU";
+        }
+        .para1::before{
+            content:  "PARAGRAF BAŞI";
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <p class="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam minus nihil quos, vel quibusdam porro suscipit. Sed, ratione similique temporibus fugiat necessitatibus ab deleniti voluptatem beatae incidunt quis rerum odio cupiditate exercitationem asperiores repellat nihil voluptate ea quasi reiciendis suscipit porro! At nulla libero labore dicta doloribus nisi. Sit recusandae asperiores ad possimus, iusto expedita quas provident cupiditate aperiam assumenda magnam sequi, quidem dolore illum optio laborum excepturi placeat mollitia quisquam cum eligendi? Id iusto sunt, debitis natus, esse eligendi iste deserunt architecto a totam commodi deleniti doloremque error minus. Eius itaque iusto architecto est dolorem quis magnam illo maiores.</p>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables-Styling</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid black;
+            border-collapse: collapse; /*border'ları birleştirir*/ 
+        }
+        table{
+                width: 75%;                
+                margin:0 auto;
+                font-size: 1.5em;
+        }
+        th,td{
+            padding: 10px;
+        }
+        thead tr{
+            background-color: green;
+            color: white;
+        }
+        tbody tr:nth-child(even){
+            background-color: #f3a2c4;
+        }
+        tbody tr:hover{
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <table class="employess">
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Departman</th>
+                <th>Maaş</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ferhat</td>
+                <td>Bilişim</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>Yasin</td>
+                <td>Bilişim</td>
+                <td>80000</td>
+            </tr>
+            <tr>
+                <td>Adnan</td>
+                <td>Bilişim</td>
+                <td>15000</td>
+            </tr>
+            <tr>
+                <td>Ahmet</td>
+                <td>Bilişim</td>
+                <td>15000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

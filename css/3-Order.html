@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        h1{
+            color: red;
+        }
+        #logo{
+            color: aqua;
+        }
+        /*Css yukarıdan aşağıya doğru çalışır.
+        Yani aşağıdaki style yukarıdakini ezer.Bu nedenle genel seçiciler en üstte, özel seçiciler altta yazılır.*/
+        
+        .info .primary{
+            color: red /*!important*/;
+        }
+        /*Verilen özellik (p) etiketindeki inline style ile ezildiği için color:blue görünecek.
+        Eğer ezilmesin isteniyorsa sonuna !important yazılır.*/
+    </style>
+   
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1 id="logo">Logo</h1>
+
+        <ul>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </header>
+    <h1>Header 2</h1>
+    <p id="parag1" class="lead info">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolor ipsa quis expedita ab asperiores minus doloremque ea totam exercitationem.
+    </p>
+    <p class="info">Lorem ipsum <span class="primary" style="color: blue;">dolor</span>  sit amet consectetur adipisicing elit. Dignissimos minima laborum dolorem deserunt quos officiis, consequatur deleniti ipsum veniam itaque.</p>
+    <p class="info">Lorem ipsum <span>dolor</span>  sit amet  consectetur, adipisicing elit. Possimus vero laudantium labore mollitia et cum quasi. Aperiam placeat aliquam aliquid!</p>
+    <p>Test paragraph</p>
+    
+    <a href="#">Home</a>
+</body>
+</html>

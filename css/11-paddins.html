@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-padding</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div.box1{
+            width: 500px;
+            height: 200px;
+            border: 5px  solid red;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
+        .box2{
+            /*tek satırda vermek için sıralama kuralı margin ile aynı.
+            top-right-bottom-left*/
+            padding: 30px 40px 30px 40px;
+            /*padding: 30px 20px; --> üst-alt 30px sağ-sol 20px*/
+            /*padding:20px -->her yön 20 px*/
+            border: 5px solid blue;
+            width: 550px;
+            height: 200px;
+            box-sizing: border-box; /*content+border kalınlığı+padding toplamını width e eşitler.
+            Verilen Width toplam sınır olur.Universal selector da gösterilebilir.*/
+
+            /*Verilen width-height ler content(içerik) boyutlarıdır.
+            üstüne border kalınlığı ve padding kalınlığı toplanınca div boyutları ortaya çıkar.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, officiis.</p>
+    </div>
+    <div class="box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, officiis.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Overflow</title>
+    <style>
+        div#d1{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            background-color: #f2f2f2;
+            overflow: scroll; /*içeriği sığdırır, her durumda scroll bar koyar.*/
+        }
+        div#d2{
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;
+            background-color: #f2f2f2;
+            overflow: auto; /*gerekli durumda (content sığmadığında) scroll bar koyar.*/
+        }
+        div#d3{
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue;
+            background-color: #f2f2f2;
+            overflow: hidden; /* div e sığmayan içeriği kırpar ve gizler.*/
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Dignissimos ea dolores temporibus.
+          Ullam nostrum ipsam atque iste quis delectus optio, enim sapiente sit! 
+          Similique natus fugiat corporis recusandae cupiditate inventore hic temporibus,
+           officiis, ullam illo delectus eius dolores a dolor, veniam magni id cumque sint ipsa suscipit? 
+           Dolore ab facilis corporis error, autem molestias recusandae laudantium ex cumque consequatur
+            ipsa quo ullam odit officia sint placeat maxime explicabo obcaecati aut aspernatur provident 
+            quae beatae eum repellat! Dicta quas quis totam dolorum perspiciatis illum, distinctio corrupti
+             vitae dolorem ullam excepturi tempore nostrum voluptatem rem reprehenderit enim delectus
+              tempora quibusdam sapiente eius ipsam aspernatur? Consequatur, alias quia. Totam est expedita
+               corporis nostrum deserunt quisquam tempore obcaecati eaque facilis provident incidunt
+                aliquam blanditiis omnis maiores quos eveniet, saepe similique quas qui excepturi dicta
+                 consectetur fuga! Ex velit maxime laudantium ipsa eligendi culpa expedita sed, inventore
+                  ut amet dolorum provident sunt quod praesentium blanditiis.
+    </div>
+    <hr>
+    <div id="d2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Dignissimos ea dolores temporibus.
+          Ullam nostrum ipsam atque iste quis delectus optio, enim sapiente sit! 
+          Similique natus fugiat corporis recusandae cupiditate inventore hic temporibus,
+           officiis, ullam illo delectus eius dolores a dolor, veniam magni id cumque sint ipsa suscipit? 
+           Dolore ab facilis corporis error, autem molestias recusandae laudantium ex cumque consequatur
+            ipsa quo ullam odit officia sint placeat maxime explicabo obcaecati aut aspernatur provident 
+            quae beatae eum repellat! Dicta quas quis totam dolorum perspiciatis illum, distinctio corrupti
+             vitae dolorem ullam excepturi tempore nostrum voluptatem rem reprehenderit enim delectus
+              tempora quibusdam sapiente eius ipsam aspernatur? Consequatur, alias quia. Totam est expedita
+               corporis nostrum deserunt quisquam tempore obcaecati eaque facilis provident incidunt
+                aliquam blanditiis omnis maiores quos eveniet, saepe similique quas qui excepturi dicta
+                 consectetur fuga! Ex velit maxime laudantium ipsa eligendi culpa expedita sed, inventore
+                  ut amet dolorum provident sunt quod praesentium blanditiis.
+    </div>
+    <hr>
+    <div id="d3">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Dignissimos ea dolores temporibus.
+          Ullam nostrum ipsam atque iste quis delectus optio, enim sapiente sit! 
+          Similique natus fugiat corporis recusandae cupiditate inventore hic temporibus,
+           officiis, ullam illo delectus eius dolores a dolor, veniam magni id cumque sint ipsa suscipit? 
+           Dolore ab facilis corporis error, autem molestias recusandae laudantium ex cumque consequatur
+            ipsa quo ullam odit officia sint placeat maxime explicabo obcaecati aut aspernatur provident 
+            quae beatae eum repellat! Dicta quas quis totam dolorum perspiciatis illum, distinctio corrupti
+             vitae dolorem ullam excepturi tempore nostrum voluptatem rem reprehenderit enim delectus
+              tempora quibusdam sapiente eius ipsam aspernatur? Consequatur, alias quia. Totam est expedita
+               corporis nostrum deserunt quisquam tempore obcaecati eaque facilis provident incidunt
+                aliquam blanditiis omnis maiores quos eveniet, saepe similique quas qui excepturi dicta
+                 consectetur fuga! Ex velit maxime laudantium ipsa eligendi culpa expedita sed, inventore
+                  ut amet dolorum provident sunt quod praesentium blanditiis.
+    </div>
+</body>
+</html>
